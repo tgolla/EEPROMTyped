@@ -1,4 +1,4 @@
-# `EEPROMTyped` Library for Arduino ![Version 1.0.0](https://img.shields.io/badge/Version-1.2.0-blue.svg)
+# `EEPROMTyped` Library for Arduino ![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue.svg)
 
 **Written by:** *Terence F. Golla*.  
 **Copyright:** _**2014**-_**2016**, *Terence F. Golla, Released under [MIT](/LICENSE) licence*.
