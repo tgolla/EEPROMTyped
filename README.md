@@ -17,7 +17,7 @@ The write method takes the memory address where it begins to write the value of 
 ```
 int blinkFrequency = 5500;
 
-EEPROMTyped.write(0, blinkFrequency)
+EEPROMTyped.write(0, blinkFrequency);
 ```
 ### `read(address, variable)`
 The read method takes the memory address where it begins to read the value of the variable broken into bytes. The memory usage depends on the sizeof the variable data type.
@@ -25,7 +25,7 @@ The read method takes the memory address where it begins to read the value of th
 ```
 int blinkFrequency;
 
-EEPROMTyped.read(0, blinkFrequency)
+EEPROMTyped.read(0, blinkFrequency);
 
 Serial.print("The blink frequency is ");
 Serial.println(blinkFrequency);
@@ -40,14 +40,14 @@ int blinkFrequency;
 byte messageEEPROMAddress = 0;
 byte blinkFrequencyEEPROMAddress = messageEEPROMAddress + EEPROMTyped.sizeOf(message);
 
-EEPROMTyped.write(messageEEPROMAddress, message)
-EEPROMTyped.write(blinkFrequencyEEPROMAddress, blinkFrequency)
+EEPROMTyped.write(messageEEPROMAddress, message);
+EEPROMTyped.write(blinkFrequencyEEPROMAddress, blinkFrequency);
 
 char messageRead[13];
 int blinkFrequencyRead;
 
-EEPROMTyped.write(messageEEPROMAddress, messageRead)
-EEPROMTyped.write(blinkFrequencyEEPROMAddress, blinkFrequencyRead)
+EEPROMTyped.write(messageEEPROMAddress, messageRead);
+EEPROMTyped.write(blinkFrequencyEEPROMAddress, blinkFrequencyRead);
 
 Serial.print("The message in memory is... ");
 Serial.println(messageRead);
