@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "EEPROMTypedTest.ino",
+    "port": "COM5"
+}
